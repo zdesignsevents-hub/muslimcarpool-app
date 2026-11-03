@@ -1,25 +1,18 @@
 {
   "cli": {
-    "version": ">= 3.0.0",
-    "packageManager": "npm"
+    "version": ">= 3.0.0"
   },
   "build": {
     "preview": {
       "android": {
         "buildType": "apk",
         "distribution": "internal"
-      },
-      "npm": {
-        "legacyPeerDeps": true
       }
     },
     "production": {
       "android": {
         "buildType": "apk",
         "distribution": "internal"
-      },
-      "npm": {
-        "legacyPeerDeps": true
       }
     }
   },
