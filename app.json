@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Muslim Carpool",
+    "slug": "MuslimCarpool",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "muslimcarpool",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muslimcarpool.app"
+    },
+    "android": {
+      "package": "com.muslimcarpool.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1B5E20",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-image",
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your photos to upload carpool media."
+        }
+      ]
+    ],
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "ab1b847d-966b-44d2-a8d8-539385403e1c"
+      }
+    },
+    "owner": "ka316"
+  }
+}
